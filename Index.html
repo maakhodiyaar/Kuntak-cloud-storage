@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#172554">
+  <title>Kuntak Cloud</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>☁️ Kuntak Cloud</h1>
+  <p>Your Personal Cloud Storage</p>
+</header>
+
+<main class="container">
+
+  <section class="upload">
+    <h2>Upload Your Files</h2>
+    <p>Select multiple files at once</p>
+
+    <button type="button"
+      onclick="document.getElementById('fileInput').click()">
+      + Select Files
+    </button>
+
+    <input type="file" id="fileInput" multiple hidden>
+  </section>
+
+  <div id="message"></div>
+
+  <h2>My Files</h2>
+
+  <section class="grid">
+
+    <div class="category">
+      <div class="emoji">🖼️</div>
+      <h3>Photos</h3>
+      <p id="photoCount">0 files</p>
+    </div>
+
+    <div class="category">
+      <div class="emoji">🎬</div>
+      <h3>Videos</h3>
+      <p id="videoCount">0 files</p>
+    </div>
+
+    <div class="category">
+      <div class="emoji">🎵</div>
+      <h3>Audio</h3>
+      <p id="audioCount">0 files</p>
+    </div>
+
+    <div class="category">
+      <div class="emoji">📄</div>
+      <h3>Documents</h3>
+      <p id="documentCount">0 files</p>
+    </div>
+
+    <div class="category">
+      <div class="emoji">📁</div>
+      <h3>Other</h3>
+      <p id="otherCount">0 files</p>
+    </div>
+
+    <div class="category">
+      <div class="emoji">☁️</div>
+      <h3>Total Files</h3>
+      <p id="totalCount">0 files</p>
+    </div>
+
+  </section>
+
+  <section class="file-list">
+    <h2>Uploaded File List</h2>
+    <div id="fileList">
+      No files selected yet.
+    </div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
